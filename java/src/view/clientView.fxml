@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="401.0" prefWidth="599.0" style="-fx-background-image: url('file:C:/Users/Pawel/Desktop/barmani_fx/java/src/view/img/bgr.jpg');" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientController">
+   <children>
+      <TabPane layoutX="3.0" layoutY="59.0" prefHeight="186.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="59.0">
+        <tabs>
+          <Tab text="Klienci">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="605.0">
+                     <children>
+                        <TableView fx:id="tbl_clients" layoutY="-1.0" prefHeight="158.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="name" prefWidth="150.0" resizable="false" text="Imię" />
+                            <TableColumn fx:id="lastname" prefWidth="150.0" resizable="false" text="Nazwisko" />
+                              <TableColumn fx:id="phone_number" prefWidth="150.0" resizable="false" text="Telefon" />
+                              <TableColumn fx:id="e_mail" prefWidth="150.0" resizable="false" text="E-mail" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label alignment="CENTER" prefHeight="59.0" prefWidth="605.0" text="Klienci" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Monotype Corsiva" size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_add" layoutX="14.0" layoutY="253.0" mnemonicParsing="false" onMouseClicked="#add_activation" prefHeight="40.0" prefWidth="150.0" text="Dodaj" />
+      <Button fx:id="btn_delete" layoutX="230.0" layoutY="253.0" mnemonicParsing="false" onAction="#deleteClientAction" prefHeight="40.0" prefWidth="150.0" text="Usuń" />
+      <Button fx:id="btn_modify" layoutX="424.0" layoutY="253.0" mnemonicParsing="false" onAction="#modifyClientAction" prefHeight="40.0" prefWidth="150.0" text="Modyfikuj" />
+      <TextField fx:id="tf_clientName" disable="true" layoutX="15.0" layoutY="312.0" promptText="Imię" />
+      <TextField fx:id="tf_clientLastname" disable="true" layoutX="229.0" layoutY="312.0" promptText="Nazwisko" />
+      <TextField fx:id="tf_clientPhone" disable="true" layoutX="14.0" layoutY="355.0" promptText="Telefon" />
+      <TextField fx:id="tf_email" disable="true" layoutX="228.0" layoutY="355.0" promptText="E-mail" />
+      <Button fx:id="btn_submit" layoutX="425.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#addClientAction" prefHeight="67.0" prefWidth="149.0" text="Zatwierdź" />
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Przełącz na">
+            <items>
+              <MenuItem fx:id="mi_orders" mnemonicParsing="false" onAction="#orderAction" text="Zamówienia" />
+                  <MenuItem fx:id="mi_shopping" mnemonicParsing="false" onAction="#ShoppingAction" text="Zakupy" />
+                  <MenuItem fx:id="mi_store" mnemonicParsing="false" onAction="#storeAction" text="Magazyn" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

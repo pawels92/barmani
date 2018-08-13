@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="401.0" prefWidth="599.0" style="-fx-background-image: url('file:C:/Users/Pawel/Desktop/barmani_fx/java/src/view/img/bgr.jpg');" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShoppingController">
+   <children>
+      <TabPane layoutX="3.0" layoutY="59.0" prefHeight="186.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="59.0">
+        <tabs>
+          <Tab text="100-150">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="605.0">
+                     <children>
+                        <TableView fx:id="tbl_first_option" layoutY="-1.0" prefHeight="158.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="col_prod1" prefWidth="159.0" resizable="false" text="Produkt" />
+                            <TableColumn fx:id="col_unit1" prefWidth="103.0" resizable="false" text="Jednostka" />
+                              <TableColumn fx:id="col_amount1" prefWidth="63.0" resizable="false" text="Ilość" />
+                              <TableColumn fx:id="col_price1" prefWidth="77.0" resizable="false" text="Cena" />
+                              <TableColumn fx:id="col_summary1" prefWidth="63.0" resizable="false" text="Suma" />
+                              <TableColumn fx:id="col_mall1" prefWidth="133.0" resizable="false" text="Sklep" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tab2" text="150-200">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="605.0">
+                     <children>
+                        <TableView fx:id="tbl_foption2" layoutY="-1.0" prefHeight="158.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <columns>
+                              <TableColumn fx:id="col_prod2" prefWidth="171.0" resizable="false" text="Produkt" />
+                              <TableColumn fx:id="col_unit2" prefWidth="91.0" resizable="false" text="Jednostka" />
+                              <TableColumn fx:id="col_amount2" prefWidth="66.0" resizable="false" text="Ilość" />
+                              <TableColumn fx:id="col_price2" prefWidth="69.0" resizable="false" text="Cena" />
+                              <TableColumn fx:id="col_summary2" prefWidth="56.0" resizable="false" text="Suma" />
+                              <TableColumn fx:id="col_mall2" prefWidth="145.0" resizable="false" text="Sklep" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="200-250">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="605.0">
+                     <children>
+                        <TableView fx:id="tbl_foption3" layoutY="-1.0" prefHeight="158.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <columns>
+                              <TableColumn fx:id="col_prod3" prefWidth="183.0" resizable="false" text="Produkt" />
+                              <TableColumn fx:id="col_unit3" prefWidth="79.0" resizable="false" text="Jednostka" />
+                              <TableColumn fx:id="col_amount3" prefWidth="54.0" resizable="false" text="Ilość" />
+                              <TableColumn fx:id="col_col_price3" prefWidth="64.0" resizable="false" text="Cena" />
+                              <TableColumn fx:id="col_summary3" prefWidth="63.0" resizable="false" text="Suma" />
+                              <TableColumn fx:id="col_mall3" prefWidth="155.0" resizable="false" text="Sklep" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="300++">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="605.0">
+                     <children>
+                        <TableView fx:id="tbl_foption4" layoutY="-1.0" prefHeight="158.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <columns>
+                              <TableColumn fx:id="col_prod4" prefWidth="183.0" resizable="false" text="Produkt" />
+                              <TableColumn fx:id="col_unit4" prefWidth="79.0" resizable="false" text="Jednostka" />
+                              <TableColumn fx:id="col_amount4" prefWidth="51.0" resizable="false" text="Ilość" />
+                              <TableColumn fx:id="col_col_price4" prefWidth="47.0" resizable="false" text="Cena" />
+                              <TableColumn fx:id="col_summary4" prefWidth="168.0" resizable="false" text="Suma" />
+                              <TableColumn fx:id="col_mall4" prefWidth="70.0" resizable="false" text="Sklep" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label alignment="CENTER" prefHeight="59.0" prefWidth="605.0" text="Zakupy" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Monotype Corsiva" size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_add_prod" layoutX="17.0" layoutY="252.0" mnemonicParsing="false" onMouseClicked="#prod_fields_activation" prefHeight="40.0" prefWidth="150.0" text="Dodaj" />
+      <TextField fx:id="tf_product_name" disable="true" layoutX="200.0" layoutY="252.0" promptText="Produkt" />
+      <TextField fx:id="tf_product_unit" disable="true" layoutX="377.0" layoutY="252.0" promptText="Jednostka" />
+      <TextField fx:id="tf_product_amount" disable="true" layoutX="200.0" layoutY="292.0" promptText="Ilość" />
+      <TextField fx:id="tf_product_price" disable="true" layoutX="377.0" layoutY="292.0" promptText="Cena" />
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Przełącz na">
+            <items>
+              <MenuItem fx:id="mi_orders" mnemonicParsing="false" onAction="#goToOrders" text="Zamówienia" />
+                  <MenuItem fx:id="mi_clients" mnemonicParsing="false" onAction="#goToClients" text="Klienci" />
+                  <MenuItem fx:id="mi_store" mnemonicParsing="false" onAction="#goToStore" text="Magazyn" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="btn_delete_product" layoutX="17.0" layoutY="305.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="Usuń" />
+      <Button fx:id="btn_modify_product" layoutX="17.0" layoutY="354.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="Modyfikuj" />
+      <ComboBox layoutX="200.0" layoutY="362.0" prefWidth="150.0" promptText="Wybierz kolumne" />
+      <TextField fx:id="tf_new_value" disable="true" layoutX="377.0" layoutY="362.0" promptText="Nowa wartość" />
+      <Button layoutX="540.0" layoutY="265.0" mnemonicParsing="false" onMouseClicked="#adding_confirmation" prefHeight="40.0" prefWidth="45.0" text="Ok" />
+      <Button layoutX="540.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#modify_confirmation" prefHeight="40.0" prefWidth="45.0" text="Ok" />
+      <TextField fx:id="tf_product_mall" disable="true" layoutX="377.0" layoutY="325.0" promptText="Sklep" />
+   </children>
+</AnchorPane>

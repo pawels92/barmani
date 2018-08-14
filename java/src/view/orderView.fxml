@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="401.0" prefWidth="599.0" style="-fx-background-image: url('file:C:/Users/Pawel/Desktop/barmani_fx/java/src/view/img/bgr.jpg');" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderController">
+<AnchorPane prefHeight="401.0" prefWidth="700.0" style="-fx-background-image: url('file:C:/Users/Pawel/Desktop/barmani_fx/java/src/view/img/bgr.jpg');" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderController">
    <children>
       <TabPane layoutX="3.0" layoutY="59.0" prefHeight="186.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="59.0">
         <tabs>
@@ -30,7 +30,8 @@
                               <TableColumn fx:id="col_guests" prefWidth="93.0" resizable="false" text="Liczba gości" />
                               <TableColumn fx:id="col_bar" prefWidth="63.0" resizable="false" text="Bar" />
                               <TableColumn fx:id="col_additional" prefWidth="77.0" resizable="false" text="Dodatkowo" />
-                              <TableColumn fx:id="col_address" prefWidth="173.0" resizable="false" text="Adres" />
+                              <TableColumn fx:id="col_address" prefWidth="154.0" resizable="false" text="Adres" />
+                              <TableColumn fx:id="col_klient" prefWidth="120.0" resizable="false" text="Dodatkowo" />
                           </columns>
                         </TableView>
                      </children>
@@ -47,10 +48,10 @@
       <Button fx:id="btn_add" layoutX="14.0" layoutY="253.0" mnemonicParsing="false" onAction="#addAction" prefHeight="40.0" prefWidth="150.0" text="Dodaj" AnchorPane.bottomAnchor="108.0" />
       <Button fx:id="btn_delete" layoutX="225.0" layoutY="253.0" mnemonicParsing="false" onAction="#deleteOrderAction" prefHeight="40.0" prefWidth="150.0" text="Usuń" />
       <Button fx:id="btn_modify" disable="true" layoutX="426.0" layoutY="253.0" mnemonicParsing="false" onAction="#modifyAction" prefHeight="40.0" prefWidth="150.0" text="Modyfikuj" visible="false" />
-      <TextField fx:id="tf_bar" layoutX="225.0" layoutY="300.0" promptText="Bar" />
-      <TextField fx:id="tf_additionals" layoutX="225.0" layoutY="338.0" prefHeight="25.0" prefWidth="150.0" promptText="Dodatkowo" />
-      <TextField fx:id="tf_client" layoutX="225.0" layoutY="375.0" promptText="Klient" visible="false" />
-      <TextField fx:id="tf_guests" layoutX="15.0" layoutY="375.0" promptText="Liczba gości" />
+      <TextField fx:id="tf_bar" disable="true" layoutX="225.0" layoutY="300.0" promptText="Bar" />
+      <TextField fx:id="tf_additionals" disable="true" layoutX="225.0" layoutY="338.0" prefHeight="25.0" prefWidth="150.0" promptText="Dodatkowo" />
+      <TextField fx:id="tf_client" disable="true" layoutX="225.0" layoutY="375.0" promptText="Klient" />
+      <TextField fx:id="tf_guests" disable="true" layoutX="15.0" layoutY="375.0" promptText="Liczba gości" />
       <MenuBar layoutY="2.0">
         <menus>
           <Menu mnemonicParsing="false" text="Przełącz na">
@@ -62,9 +63,9 @@
           </Menu>
         </menus>
       </MenuBar>
-      <DatePicker fx:id="dp_date" layoutX="14.0" layoutY="300.0" promptText="Data" />
-      <TextField fx:id="tf_time" layoutX="14.0" layoutY="338.0" prefHeight="25.0" prefWidth="150.0" promptText="Godzina" />
-      <TextArea fx:id="ta_address" layoutX="426.0" layoutY="299.0" prefHeight="59.0" prefWidth="150.0" promptText="Adres" />
+      <DatePicker fx:id="dp_date" disable="true" layoutX="14.0" layoutY="300.0" promptText="Data" />
+      <TextField fx:id="tf_time" disable="true" layoutX="14.0" layoutY="338.0" prefHeight="25.0" prefWidth="150.0" promptText="Godzina" />
+      <TextArea fx:id="ta_address" disable="true" layoutX="426.0" layoutY="299.0" prefHeight="59.0" prefWidth="150.0" promptText="Adres" />
       <Button fx:id="btn_confirmation" layoutX="426.0" layoutY="363.0" mnemonicParsing="false" onAction="#confirmAction" prefHeight="25.0" prefWidth="150.0" text="Zatwierdź" />
    </children>
 </AnchorPane>

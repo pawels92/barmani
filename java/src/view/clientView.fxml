@@ -42,7 +42,7 @@
       </Label>
       <Button fx:id="btn_add" layoutX="14.0" layoutY="253.0" mnemonicParsing="false" onMouseClicked="#add_activation" prefHeight="40.0" prefWidth="150.0" text="Dodaj" />
       <Button fx:id="btn_delete" layoutX="230.0" layoutY="253.0" mnemonicParsing="false" onAction="#deleteClientAction" prefHeight="40.0" prefWidth="150.0" text="Usuń" />
-      <Button fx:id="btn_modify" layoutX="424.0" layoutY="253.0" mnemonicParsing="false" onAction="#modifyClientAction" prefHeight="40.0" prefWidth="150.0" text="Modyfikuj" />
+      <Button fx:id="btn_modify" disable="true" layoutX="424.0" layoutY="253.0" mnemonicParsing="false" onAction="#modifyClientAction" prefHeight="40.0" prefWidth="150.0" text="Modyfikuj" visible="false" />
       <TextField fx:id="tf_clientName" disable="true" layoutX="15.0" layoutY="312.0" promptText="Imię" />
       <TextField fx:id="tf_clientLastname" disable="true" layoutX="229.0" layoutY="312.0" promptText="Nazwisko" />
       <TextField fx:id="tf_clientPhone" disable="true" layoutX="14.0" layoutY="355.0" promptText="Telefon" />

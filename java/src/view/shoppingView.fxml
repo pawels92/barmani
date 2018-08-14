@@ -97,7 +97,7 @@
             <Font name="Monotype Corsiva" size="46.0" />
          </font>
       </Label>
-      <Button fx:id="btn_add_prod" layoutX="17.0" layoutY="252.0" mnemonicParsing="false" onMouseClicked="#prod_fields_activation" prefHeight="40.0" prefWidth="150.0" text="Dodaj" />
+      <Button fx:id="btn_add_prod" disable="true" layoutX="17.0" layoutY="252.0" mnemonicParsing="false" onMouseClicked="#prod_fields_activation" prefHeight="40.0" prefWidth="150.0" text="Dodaj" />
       <TextField fx:id="tf_product_name" disable="true" layoutX="200.0" layoutY="252.0" promptText="Produkt" />
       <TextField fx:id="tf_product_unit" disable="true" layoutX="377.0" layoutY="252.0" promptText="Jednostka" />
       <TextField fx:id="tf_product_amount" disable="true" layoutX="200.0" layoutY="292.0" promptText="Ilość" />
@@ -113,12 +113,12 @@
           </Menu>
         </menus>
       </MenuBar>
-      <Button fx:id="btn_delete_product" layoutX="17.0" layoutY="305.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="Usuń" />
-      <Button fx:id="btn_modify_product" layoutX="17.0" layoutY="354.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="Modyfikuj" />
-      <ComboBox layoutX="200.0" layoutY="362.0" prefWidth="150.0" promptText="Wybierz kolumne" />
+      <Button fx:id="btn_delete_product" disable="true" layoutX="17.0" layoutY="305.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="Usuń" />
+      <Button fx:id="btn_modify_product" disable="true" layoutX="17.0" layoutY="354.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="Modyfikuj" />
+      <ComboBox disable="true" layoutX="200.0" layoutY="362.0" prefWidth="150.0" promptText="Wybierz kolumne" />
       <TextField fx:id="tf_new_value" disable="true" layoutX="377.0" layoutY="362.0" promptText="Nowa wartość" />
-      <Button layoutX="540.0" layoutY="265.0" mnemonicParsing="false" onMouseClicked="#adding_confirmation" prefHeight="40.0" prefWidth="45.0" text="Ok" />
-      <Button layoutX="540.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#modify_confirmation" prefHeight="40.0" prefWidth="45.0" text="Ok" />
+      <Button disable="true" layoutX="540.0" layoutY="265.0" mnemonicParsing="false" onMouseClicked="#adding_confirmation" prefHeight="40.0" prefWidth="45.0" text="Ok" />
+      <Button disable="true" layoutX="540.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#modify_confirmation" prefHeight="40.0" prefWidth="45.0" text="Ok" />
       <TextField fx:id="tf_product_mall" disable="true" layoutX="377.0" layoutY="325.0" promptText="Sklep" />
    </children>
 </AnchorPane>

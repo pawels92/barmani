@@ -147,7 +147,7 @@ public class StoreController {
     void goToShopping(ActionEvent event) throws IOException {
         Stage currentstage = (Stage) btn_add.getScene().getWindow();
         currentstage.close();
-        Parent root = FXMLLoader.load(getClass().getResource("/view/clientView.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/view/shoppingView.fxml"));
         Scene scene = new Scene(root);
         Stage clientStage = new Stage();
         clientStage.setScene(scene);
